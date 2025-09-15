@@ -1,5 +1,5 @@
 import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
-// import { Ground } from "./Ground";
+import { Ground } from "./Ground";
 
 export const Room = () => {
   return (
@@ -30,11 +30,11 @@ export const Room = () => {
         castShadow
         shadow-bias={-0.000005}
       />
-      <mesh position={[0, 0, 0]} castShadow receiveShadow>
+      {/* <mesh position={[0, 0, 0]} castShadow receiveShadow>
         <boxGeometry args={[1, 1, 1]} />
         <meshStandardMaterial color="skyblue" metalness={0.5} roughness={0.3} />
-      </mesh>
-      {/* <Ground/> */}
+      </mesh> */}
+      <Ground/>
     </>
   );
 };
